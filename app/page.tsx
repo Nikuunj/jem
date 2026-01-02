@@ -3,7 +3,7 @@ import Service from "@/components/home/Service";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       <Hero />
       <Service />
     </div>
