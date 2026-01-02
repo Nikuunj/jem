@@ -1,4 +1,6 @@
+import { PHONE_NUMBER } from "@/config"
 import HeroBG from "../ui/HeroBG"
+import { ArrowRight } from "lucide-react"
 
 function Hero() {
   return (
@@ -14,6 +16,19 @@ function Hero() {
       <p className="text-lg/7 text-zinc-400 max-w-4xl ">
         Janvi Earth Mover delivers powerful excavation and earthmoving solutions. From foundation work to large-scale land development, we get the job done.
       </p>
+      <div className="gap-4  flex items-center  ">
+        <span className="bg-yellow-400 text-black w-fit py-3 px-7    font-medium flex items-center">
+          <span className="text-xl">
+            {PHONE_NUMBER}
+          </span> <ArrowRight />
+        </span>
+        <span className="border-2 border-yellow-400  w-fit py-3 px-7   font-medium flex items-center">
+          <span className="text-xl">
+            {PHONE_NUMBER}
+          </span>
+          <ArrowRight />
+        </span>
+      </div>
     </div>
   )
 }
