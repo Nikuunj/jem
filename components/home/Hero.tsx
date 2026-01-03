@@ -7,10 +7,10 @@ function Hero() {
   return (
     <div className="text-white  h-full min-h-screen flex flex-col justify-center  px-7 gap-5 relative">
       <HeroBG />
-      <span className="bg-yellow-400 text-black w-fit py-2 px-4 text-sm sm:text-md -skew-x-8 ms-2 font-medium">
+      <span className="relative overflow-hidden bg-yellow-400 text-black w-fit py-2 px-4 text-sm sm:text-md -skew-x-12 ms-2 font-medium">
         PROFESSIONAL EARTHMOVING
-      </span>
-      <div className="">
+        <span className="absolute inset-0 -translate-x-full animate-shine bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></span>
+      </span>     <div className="">
         <TextColor first="MOVING" second="EARTH" />
         <TextColor first="BUILDING" second="FUTURES" />
       </div>
