@@ -1,6 +1,7 @@
-import { PHONE_NUMBER } from "@/config"
 import HeroBG from "../ui/HeroBG"
-import { ArrowRight } from "lucide-react"
+import { Phone } from "lucide-react"
+import BorderShineBtn from "../ui/BorderShineBtn"
+import { HoverBorderGradient } from "../ui/HoverBorderGradient"
 
 function Hero() {
   return (
@@ -17,18 +18,15 @@ function Hero() {
         Janvi Earth Mover delivers powerful excavation and earthmoving solutions. From foundation work to large-scale land development, we get the job done.
       </p>
       <div className="gap-4  flex sm:items-center flex-col sm:flex-row ">
-        <span className="bg-yellow-400 text-black w-fit py-3 px-7    font-medium flex items-center gap-2">
-          <span className="text-sm sm:text-xl">
-            {PHONE_NUMBER}
-          </span>
-          <ArrowRight className="size-3 sm:size-5" />
-        </span>
-        <span className="border-2 border-yellow-400  w-fit py-3 px-7   font-medium flex items-center gap-2">
-          <span className="text-sm sm:text-xl">
-            {PHONE_NUMBER}
-          </span>
-          <ArrowRight className="size-3 sm:size-5" />
-        </span>
+        <HoverBorderGradient
+          containerClassName="rounded-full border-zinc-600"
+          as="button"
+          className="bg-black border-zinc-600  text-white flex items-center space-x-3"
+        >
+          <Phone className="size-3.5" />
+          <span>212121212121</span>
+        </HoverBorderGradient>
+        <BorderShineBtn />
       </div>
     </div>
   )
