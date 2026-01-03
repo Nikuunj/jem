@@ -1,34 +1,38 @@
 import { service } from "@/lib/data";
 import { CardSpotlight } from "../ui/CardSpotLight"
 import TitleDom from "../ui/TitleDom";
+import { BackgroundRippleEffect } from "../ui/BackgroundRippleEffect";
 
 function Service() {
   const renderCard = service.map((val, idx) => <ServiceCard name={val.name} describe={val.describe} points={val.points} key={val.name + idx} />)
   return (
-    <div className="flex flex-col gap-9 px-7">
+    <div className="flex flex-col gap-9 px-7 relative py-17 overflow-hidden">
       <TitleDom name={"OUR SERVICES"}
         line1={"Everything You Need to Build from the Ground Up"}
         line2={"The all-in-one engine to launch, scale, and monetise worldwide.          Designed for the new generation of digital and AI products."} />
       <div className="flex flex-wrap justify-center gap-8">
         {renderCard}
       </div>
+      <BackgroundRippleEffect />
     </div >
   )
 }
 
 const ServiceCard = ({ name, describe, points }: { name: string, describe: string, points: string[] }) => {
   return (
-    <CardSpotlight className=" bg-zinc-100 border border-zinc-300  mix-blend-difference w-fit max-w-sm gap-4 flex flex-col "  >
-      <h1 className="text-lg font-bold">
-        {name}
-      </h1>
-      <p className="text-base">
-        {describe}
-      </p>
-      <ul className="text-sm space-y-3">
-        {points.map((val, idx) => <Step title={val} key={val + idx} />)}
-      </ul>
-    </CardSpotlight>
+    <div className="z-10">
+      <CardSpotlight className=" bg-zinc-100 border border-zinc-300  mix-blend-difference max-w-sm gap-4 flex flex-col z-10"  >
+        <h1 className="text-lg font-bold z-10">
+          {name}
+        </h1>
+        <p className="text-base z-10">
+          {describe}
+        </p>
+        <ul className="text-sm space-y-3 z-10">
+          {points.map((val, idx) => <Step title={val} key={val + idx} />)}
+        </ul>
+      </CardSpotlight>
+    </div>
   )
 }
 

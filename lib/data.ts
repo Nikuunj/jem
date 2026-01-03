@@ -45,3 +45,23 @@ export const recent_project = [
     src: "/side1.jpeg",
   },
 ];
+
+
+export const why = [
+  {
+    title: 'SAFETY FIRST',
+    describe:
+      'We prioritize safety in every project with trained operators and well-maintained equipment.',
+  },
+  {
+    title: 'ON-TIME DELIVERY',
+    describe:
+      'We understand deadlines matter. Count on us to complete your project on schedule.',
+  },
+  {
+    title: 'QUALITY ASSURED',
+    describe:
+      'Our commitment to quality has earned us recognition and repeat clients.',
+  },
+]
+
