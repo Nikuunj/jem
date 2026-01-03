@@ -1,22 +1,14 @@
 import { service } from "@/lib/data";
 import { CardSpotlight } from "../ui/CardSpotLight"
+import TitleDom from "../ui/TitleDom";
 
 function Service() {
   const renderCard = service.map((val, idx) => <ServiceCard name={val.name} describe={val.describe} points={val.points} key={val.name + idx} />)
   return (
     <div className="flex flex-col gap-9">
-      <div className="flex flex-col items-center gap-3 text-center text-balance">
-        <h1 className="text-blue-400">
-          OUR SERVICES
-        </h1>
-        <p className="text-3xl font-medium max-w-lg">
-          Everything You Need to Build from the Ground Up
-        </p>
-        <p className="text-lg  text-zinc-400 max-w-lg  ">
-          The all-in-one engine to launch, scale, and monetise worldwide.
-          Designed for the new generation of digital and AI products.
-        </p>
-      </div>
+      <TitleDom name={"OUR SERVICES"}
+        line1={"Everything You Need to Build from the Ground Up"}
+        line2={"The all-in-one engine to launch, scale, and monetise worldwide.          Designed for the new generation of digital and AI products."} />
       <div className="flex flex-wrap justify-center gap-8">
         {renderCard}
       </div>
@@ -26,14 +18,14 @@ function Service() {
 
 const ServiceCard = ({ name, describe, points }: { name: string, describe: string, points: string[] }) => {
   return (
-    <CardSpotlight className=" bg-zinc-100 border border-zinc-300  mix-blend-difference w-fit max-w-sm space-y-2 "  >
+    <CardSpotlight className=" bg-zinc-100 border border-zinc-300  mix-blend-difference w-fit max-w-sm gap-4 flex flex-col "  >
       <h1 className="text-lg font-bold">
         {name}
       </h1>
       <p className="text-base">
         {describe}
       </p>
-      <ul className="text-sm space-y-2">
+      <ul className="text-sm space-y-3">
         {points.map((val, idx) => <Step title={val} key={val + idx} />)}
       </ul>
     </CardSpotlight>
