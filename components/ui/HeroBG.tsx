@@ -1,9 +1,11 @@
 
-function HeroBG() {
+function HeroBG({ position = "hero" }: { position?: "hero" | "why" }) {
   return (
-    <div className="absolute inset-0 -z-10">
-      <div className="absolute inset-0 bg-radial-[at_20%_5%] from-zinc-950 from-35% via-50% to-65% via-yellow-800 to-zinc-950 " />
-
+    <div className="absolute inset-0 z-[-1]">
+      <div className={`absolute inset-0 ${position === "hero" ? "bg-radial-[at_0%_20%] md:bg-radial-[at_20%_5%]  " :
+        "bg-radial-[at_75%_75%] "} blur-sm from-zinc-950 from-70% via-80% to-95% via-yellow-800 to-zinc-950`} />
+      {position === "why" && <div key={2} className={` absolute inset-0  bg-radial-[at_0%_20%]  blur-sm from-transparent from-75% via-85% to-95% via-yellow-800 to-transparent`} />
+      }
       <div
         className="absolute inset-0 opacity-50 "
         style={{
