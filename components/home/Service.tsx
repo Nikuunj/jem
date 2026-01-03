@@ -5,7 +5,7 @@ import TitleDom from "../ui/TitleDom";
 function Service() {
   const renderCard = service.map((val, idx) => <ServiceCard name={val.name} describe={val.describe} points={val.points} key={val.name + idx} />)
   return (
-    <div className="flex flex-col gap-9">
+    <div className="flex flex-col gap-9 px-7">
       <TitleDom name={"OUR SERVICES"}
         line1={"Everything You Need to Build from the Ground Up"}
         line2={"The all-in-one engine to launch, scale, and monetise worldwide.          Designed for the new generation of digital and AI products."} />

@@ -4,7 +4,7 @@ import { AnimatedTestimonials } from "../ui/AnimatedTestimoials"
 
 function Work() {
   return (
-    <div className="flex flex-col gap-9 bg-black  py-13">
+    <div className="flex flex-col gap-9 bg-black  py-13 px-7">
       <TitleDom name={"OUR WORK"}
         theme="b"
         line1={"RECENT PROJECTS"}
