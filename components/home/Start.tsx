@@ -15,37 +15,39 @@ function Start() {
         </p>
       </div>
       <div className="gap-4  flex sm:items-center flex-col sm:flex-row justify-center ">
-        <HoverBorderGradient
-          containerClassName="rounded-full border-zinc-600"
-          as="button"
-          className="bg-black border-zinc-600  text-white flex items-center space-x-3"
-        >
-          <Phone className="size-3.5" />
-          <span>212121212121</span>
-        </HoverBorderGradient>
+        <a href="tel:+212121212121">
+          <HoverBorderGradient
+            containerClassName="rounded-full border-zinc-600"
+            as="button"
+            className="bg-black border-zinc-600  text-white flex items-center space-x-3"
+          >
+            <Phone className="size-3.5" />
+            <span>212121212121</span>
+          </HoverBorderGradient>
+        </a>
         <BorderShineBtn />
       </div>
-      <div className="flex justify-center">
+      <div className="flex overflow-hidden bg-zinc-50/0  justify-center px-3">
         <PixelatedCanvas
           src="/logo.png"
-          width={600}
-          height={300}
           cellSize={3}
+          width={400}
+          height={250}
           dotScale={0.9}
           shape="square"
-          backgroundColor="#09090b"
+          backgroundColor=""
           dropoutStrength={0.4}
           interactive
           distortionStrength={3}
           distortionRadius={80}
           distortionMode="swirl"
           followSpeed={0.2}
-          jitterStrength={4}
+          jitterStrength={3}
           jitterSpeed={4}
           sampleAverage
           tintColor="#FFFFFF"
-          tintStrength={0.25}
-          className="rounded-xl shadow-lg"
+          tintStrength={0.30}
+          className="rounded-xl shadow-lg w-lg  bg-transparent"
         />
       </div>
       <StartBG />

@@ -18,14 +18,16 @@ function Hero() {
         Janvi Earth Mover delivers powerful excavation and earthmoving solutions. From foundation work to large-scale land development, we get the job done.
       </p>
       <div className="gap-4  flex sm:items-center flex-col sm:flex-row ">
-        <HoverBorderGradient
-          containerClassName="rounded-full border-zinc-600"
-          as="button"
-          className="bg-black border-zinc-600  text-white flex items-center space-x-3"
-        >
-          <Phone className="size-3.5" />
-          <span>212121212121</span>
-        </HoverBorderGradient>
+        <a href="tel:+212121212121">
+          <HoverBorderGradient
+            containerClassName="rounded-full border-zinc-600"
+            as="button"
+            className="bg-black border-zinc-600  text-white flex items-center space-x-3"
+          >
+            <Phone className="size-3.5" />
+            <span>212121212121</span>
+          </HoverBorderGradient>
+        </a>
         <BorderShineBtn />
       </div>
     </div>
