@@ -32,17 +32,35 @@ export const service = [
 export const recent_project = [
   {
     quote:
-      "Precision in motion. Coordinating a seamless fleet workflow to ensure the project timeline stayed ahead of schedule, proving that efficiency starts with organized ground operations.",
-    name: "Focus on Progress & Scale",
-    designation: "Location",
+      "Turning rugged terrain into a foundation for the future. Precision excavation meets high-capacity power.",
+    name: "Earthworks & Site Preparation",
+    designation: "Heavy Duty Operations",
     src: "/itachi.jpeg",
   },
   {
     quote:
-      "Transforming rugged terrain into build-ready sites. We use top-tier machinery to ensure a safe, stable foundation for construction.",
-    name: "Focus on Site Preparation",
-    designation: "Location",
+      "Efficiency in motion. Coordinating a full fleet to ensure project timelines are met with precision and reliability.",
+    name: "Large-Scale Material Transport",
+    designation: "Logistics & Supply Chain",
     src: "/side1.jpeg",
+  },
+  {
+    quote: "Breaking through boundaries. Combining precision attachments with heavy-duty power to conquer the toughest terrain.",
+    name: "Advanced Trenching & Demolition",
+    designation: "Specialized Excavation Services",
+    src: "/side2.jpeg",
+  },
+  {
+    name: "High-Efficiency Loadout",
+    designation: "Site Production & Mining",
+    quote: "Maximizing uptime with rapid cycles and steady hands. Every bucket load is a step toward project completion.",
+    src: "/side3.jpeg",
+  },
+  {
+    name: "Urban Infrastructure Preparation",
+    designation: "Large-Scale Site Clearing",
+    quote: "Building the skyline from the ground up. Coordinating multi-unit operations to prepare complex urban sites for future development.",
+    src: "/side5.jpeg",
   },
 ];
 
