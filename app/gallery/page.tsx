@@ -1,4 +1,5 @@
 import { TextColor } from "@/components/home/Hero";
+import { BackgroundRippleEffect } from "@/components/ui/BackgroundRippleEffect";
 import HeroBG from "@/components/ui/HeroBG";
 import { ParallaxScroll } from "@/components/ui/ParallaXScroll";
 
@@ -41,7 +42,7 @@ function GalleryPage() {
 
         <HeroBG />
       </div>
-      <ParallaxScroll images={images} />
+      <ParallaxScroll images={images} className="z-20" />
     </div>
   )
 }

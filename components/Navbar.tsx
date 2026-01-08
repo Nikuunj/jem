@@ -39,7 +39,9 @@ function NavbarMain() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <a href="tel:+212121212121">
+              <NavbarButton variant="primary">Book a call</NavbarButton>
+            </a>
           </div>
         </NavBody>
 
@@ -68,13 +70,15 @@ function NavbarMain() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
+              <a href="tel:+212121212121">
+                <NavbarButton
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  variant="primary"
+                  className="w-full"
+                >
+                  Book a call
+                </NavbarButton>
+              </a>
             </div>
           </MobileNavMenu>
         </MobileNav>
