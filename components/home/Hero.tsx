@@ -34,7 +34,7 @@ function Hero() {
   )
 }
 
-function TextColor({ first, second }: { first: string, second: string }) {
+export function TextColor({ first, second }: { first: string, second: string }) {
   return (
     <p className="text-3xl sm:text-5xl lg:text-[81px]/21 font-bold">
       <span>{first}</span> <span className="text-yellow-400">{second}</span>
